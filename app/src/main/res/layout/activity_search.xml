@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_background"
+    tools:context=".SearchActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/search_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:src="@mipmap/close"/>
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/search_iv_back"
+            android:background="@drawable/remark_cancelbtn_bg"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="3dp"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:hint="@string/search_et_hint">
+            <requestFocus/>
+        </EditText>
+
+        <ImageView
+            android:id="@+id/search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/search"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/search_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="6dp"
+        android:padding="10dp"
+        android:divider="@color/grey_background"/>
+
+    <TextView
+        android:id="@+id/search_tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="@string/search_tv"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:drawableTopCompat="@mipmap/search_empty"/>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <DatePicker
+        android:id="@+id/dialog_calender_dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnersShown="true"/>
+
+    <TimePicker
+        android:id="@+id/dialog_calender_tp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:timePickerMode="spinner"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/dialog_calender_btn_cancel"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:textColor="@color/blue_1278FF"
+            android:text="@string/cancel"
+            android:textStyle="bold"/>
+
+        <android.widget.Button
+            android:id="@+id/dialog_calender_btn_ensure"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ensure"
+            android:textColor="@color/blue_1278FF"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+</LinearLayout>

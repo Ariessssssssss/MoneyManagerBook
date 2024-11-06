@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".frag_start.StartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/start_frag_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:gravity="center"
+            android:text="@string/start1_tv"
+            android:textColor="@color/blue_0077D1"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/start_frag_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/start_1" />
+
+        <android.widget.Button
+            android:id="@+id/start_frag_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="@string/start"
+            style="@style/Record_btn_Style"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_background"
+    tools:context=".DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/details_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/close"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/details"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/details_iv_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            android:src="@mipmap/history_calendar"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/details_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2024年8月账单"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/details_tv_payout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="共0笔支出，¥ 0.0"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/details_tv_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="共0笔收入，¥ 0.0"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <android.widget.Button
+            android:id="@+id/details_btn_out"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/payout"
+            style="@style/Record_btn_Style"
+            android:layout_marginEnd="10dp"/>
+
+        <android.widget.Button
+            android:id="@+id/details_btn_in"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="@string/income"
+            style="@style/Cancel_btn_Style"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/details_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

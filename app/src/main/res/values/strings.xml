@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">简记账</string>
+    <string name="hello">Hello!</string>
+    <string name="use">欢迎登录简记账</string>
+    <string name="use_register">欢迎注册简记账</string>
+    <string name="start">Get Start -></string>
+    <string name="login">登 录</string>
+    <string name="register">注 册</string>
+    <string name="login_user_hint"> 请输入账号</string>
+    <string name="login_pass_hint"> 请输入密码</string>
+    <string name="register_pass_hint"> 请重复输入密码</string>
+    <string name="login_register">没有账号? 注册</string>
+    <string name="record_one">添加一笔新账单</string>
+    <string name="month_in">本月收入：</string>
+    <string name="month_out">本月支出：</string>
+    <string name="month_budget">预算：</string>
+    <string name="month_budget_surplus">剩余：</string>
+    <string name="month_chart">查看数据图表：</string>
+    <string name="add_remark">添加备注</string>
+    <string name="add_remark_hint">请输入备注</string>
+    <string name="cancel">取消</string>
+    <string name="ensure">确定</string>
+    <string name="about">关于</string>
+    <string name="setting">设置</string>
+    <string name="setting_clear">清空所有记录</string>
+    <string name="setting_logout">退出登录</string>
+    <string name="history">账单记录</string>
+    <string name="history_info">本月账单记录</string>
+    <string name="details">账单详情</string>
+    <string name="payout">支出</string>
+    <string name="income">收入</string>
+    <string name="budget">设置本月预算</string>
+    <string name="budget_tv">¥ </string>
+    <string name="budget_et_hint">请输入预算</string>
+    <string name="search_et_hint">请输入搜索信息:</string>
+    <string name="search_tv">数据为空，无此类记录~~</string>
+    <string name="not_data">暂无数据~~</string>
+    <string name="skip">Skip now</string>
+    <string name="start1_tv">欢迎使用\n 简记账 App</string>
+    <string name="start2_tv">简单的记账方式\n</string>
+    <string name="start3_tv">轻松查找\n您的交易历史记录</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

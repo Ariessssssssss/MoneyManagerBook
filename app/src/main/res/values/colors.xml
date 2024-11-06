@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 基础颜色 -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 主色调 - 绿色变体 -->
+    <color name="primary_green">#2E8B57</color><!-- 海绿色，主要绿色 -->
+    <color name="primary_green_light">#66CDAA</color><!-- 中绿宝石色，次要绿色 -->
+    <color name="primary_green_bg">#E8F5E9</color><!-- 浅绿色，用于背景和卡片 -->
+    <color name="green_006400">#006400</color><!-- 原始深绿色，保留用于兼容性 -->
+    <color name="green_0C7C0C">#0C7C0C</color><!-- 原始绿色，保留用于兼容性 -->
+
+    <!-- 对比色 -->
+    <color name="income_color">#2E8B57</color><!-- 收入颜色：海绿色 -->
+    <color name="expense_color">#FF6B6B</color><!-- 支出颜色：柔和红色 -->
+    <color name="red_ff0000">#FF0000</color><!-- 原始红色，保留用于兼容性 -->
+
+    <!-- 中性色 -->
+    <color name="background_light">#F8F9FA</color><!-- 背景色：明亮的灰色 -->
+    <color name="text_primary">#212529</color><!-- 主要文本：深灰色 -->
+    <color name="text_secondary">#6C757D</color><!-- 次要文本：中灰色 -->
+    <color name="grey_background">#F3F3F3</color><!-- 原始灰色背景，保留用于兼容性 -->
+    <color name="grey_7D7D7D">#7D7D7D</color><!-- 原始灰色，保留用于兼容性 -->
+    <color name="grey_DDDDDD">#DDDDDD</color><!-- 原始灰色，保留用于兼容性 -->
+
+    <!-- 蓝色系列，保留用于兼容性 -->
+    <color name="blue_1278FF">#1278FF</color>
+    <color name="blue_9FD6F3">#9FD6F3</color>
+    <color name="blue_0077D1">#0077D1</color>
+</resources>

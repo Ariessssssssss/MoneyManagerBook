@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/dialog_more_btn_setting"
+            style="@style/More_btn_Style"
+            android:text="@string/setting"
+            android:drawableTop="@mipmap/more_setting"/>
+
+        <android.widget.Button
+            android:id="@+id/dialog_more_btn_history"
+            android:layout_marginStart="10dp"
+            style="@style/More_btn_Style"
+            android:text="@string/history"
+            android:drawableTop="@mipmap/more_record"/>
+
+        <android.widget.Button
+            android:id="@+id/dialog_more_btn_details"
+            android:layout_marginStart="10dp"
+            style="@style/More_btn_Style"
+            android:text="@string/details"
+            android:drawableTop="@mipmap/more_chart"/>
+
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/dialog_more_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/dialog_close"/>
+
+</LinearLayout>

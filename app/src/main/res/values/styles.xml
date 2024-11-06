@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 按钮样式 -->
+    <style name="Record_btn_Style" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/main_recordbtn_bg</item>
+        <item name="android:elevation">2dp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Login_wechatbtn_Style" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/main_wechatbtn_bg</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Cancel_btn_Style" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/remark_cancelbtn_bg</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="More_btn_Style" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:elevation">1dp</item>
+    </style>
+
+    <!-- 文本样式 -->
+    <style name="TextAppearance.App.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.App.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.App.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.App.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="backgroundTint">@color/primary_green</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="Widget.App.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/primary_green</item>
+        <item name="android:textSize">16sp</item>
+        <item name="rippleColor">@color/primary_green_bg</item>
+    </style>
+
+    <style name="Widget.App.Button.Income" parent="Widget.App.Button">
+        <item name="backgroundTint">@color/income_color</item>
+    </style>
+
+    <style name="Widget.App.Button.Expense" parent="Widget.App.Button">
+        <item name="backgroundTint">@color/expense_color</item>
+    </style>
+
+    <!-- 卡片样式 -->
+    <style name="Widget.App.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <!-- 输入框样式 -->
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxStrokeColor">@color/primary_green</item>
+        <item name="hintTextColor">@color/primary_green</item>
+    </style>
+
+    <!-- 标签样式 -->
+    <style name="Widget.App.Chip" parent="Widget.MaterialComponents.Chip.Action">
+        <item name="chipBackgroundColor">@color/primary_green_bg</item>
+        <item name="chipStrokeColor">@color/primary_green_light</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="android:textColor">@color/primary_green</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 收入标签样式 -->
+    <style name="Widget.App.Chip.Income" parent="Widget.App.Chip">
+        <item name="chipBackgroundColor">@color/primary_green_bg</item>
+        <item name="chipStrokeColor">@color/income_color</item>
+        <item name="android:textColor">@color/income_color</item>
+    </style>
+
+    <!-- 支出标签样式 -->
+    <style name="Widget.App.Chip.Expense" parent="Widget.App.Chip">
+        <item name="chipBackgroundColor">#FFEBEE</item>
+        <item name="chipStrokeColor">@color/expense_color</item>
+        <item name="android:textColor">@color/expense_color</item>
+    </style>
+
+</resources>

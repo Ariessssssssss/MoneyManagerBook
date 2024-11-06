@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius_border"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/item_mainlv_top_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/month_out" />
+
+        <TextView
+            android:id="@+id/item_mainlv_top_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mainlv_top_tv1"
+            android:text="¥ 0"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/item_mainlv_top_iv_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/eye_open"
+            android:layout_alignTop="@id/item_mainlv_top_out"/>
+
+        <TextView
+            android:id="@+id/item_mainlv_top_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mainlv_top_out"
+            android:layout_marginTop="5dp"
+            android:text="@string/month_in"/>
+
+        <TextView
+            android:id="@+id/item_mainlv_top_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mainlv_top_out"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/item_mainlv_top_tv2"
+            android:text="¥ 0"/>
+
+        <TextView
+            android:id="@+id/item_mainlv_top_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/item_mainlv_top_tv2"
+            android:text="@string/month_budget"/>
+
+        <TextView
+            android:id="@+id/item_mainlv_top_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_mainlv_top_tv3"
+            android:layout_alignBottom="@id/item_mainlv_top_tv3"
+            android:layout_marginEnd="5dp"
+            android:text="¥ 0"/>
+
+        <TextView
+            android:id="@+id/item_mainlv_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_mainlv_top_budget"
+            android:layout_alignBottom="@id/item_mainlv_top_tv3"
+            android:text="@string/month_budget_surplus"/>
+
+        <TextView
+            android:id="@+id/item_mainlv_top_budget_surplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/item_mainlv_tv4"
+            android:layout_alignBottom="@id/item_mainlv_top_tv3"
+            android:layout_marginEnd="5dp"
+            android:text="¥ 0"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/item_mainlv_top_tv3"
+            android:layout_marginTop="8dp"
+            android:background="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/item_mainlv_top_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_mainlv_top_tv3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/month_chart"
+            android:textColor="@color/primary_green"
+            android:textAlignment="center"
+            android:drawablePadding="10dp"
+            app:drawableStartCompat="@mipmap/chart" />
+
+    </RelativeLayout>
+
+    <android.widget.Button
+        android:id="@+id/mainlv_btn_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Record_btn_Style"
+        android:text="@string/record_one"
+        android:layout_marginTop="5dp"
+        android:paddingStart="130dp"
+        android:drawableStart="@mipmap/edit"
+        android:gravity="center_vertical"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/item_mainlv_top_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="今日账单"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/item_mainlv_top_day_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/item_mainlv_top_day_out"
+            android:text="收 ¥ 0"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/item_mainlv_top_day_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:text="支 ¥ 0"
+            android:textSize="18sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

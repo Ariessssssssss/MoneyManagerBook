@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
+<<<<<<< HEAD
     <solid android:color="@color/primary_green"/>
     <!--表示四个角的弧度-->
     <corners android:radius="8dp"/>
     <!-- 添加轻微阴影效果 -->
     <padding android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp"/>
+=======
+    <solid android:color="@color/blue_1278FF"/>
+    <!--表示四个角的弧度-->
+    <corners android:radius="20dp"/>
+>>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
 
 </shape>

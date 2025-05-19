@@ -122,10 +122,12 @@ public class ChartController {
 
         // 获取饼图数据
         List<ChartItemBean> expenseChartList = getChartListFromDetailstb(year, month, 0);
+        List<ChartItemBean> incomeChartList = getChartListFromDetailstb(year, month, 1);
 
         result.put("totalIncome", totalIncome);
         result.put("totalExpense", totalExpense);
         result.put("expenseChartList", expenseChartList);
+        result.put("incomeChartList", incomeChartList);
 
         return result;
     }
@@ -169,5 +171,16 @@ public class ChartController {
      */
     public ChartService.MonthlyAnalysis analyzeMonthlyData(int year, int month) {
         return chartService.analyzeMonthlyData(year, month);
+    }
+
+    /**
+     * 获取指定月份的总金额
+     * @param year 年份
+     * @param month 月份
+     * @param kind 类型（0=支出，1=收入）
+     * @return 总金额
+     */
+    public float getMonthlySum(int year, int month, int kind) {
+        return chartService.getMonthlySum(year, month, kind);
     }
 }

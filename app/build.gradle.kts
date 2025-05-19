@@ -80,4 +80,9 @@ dependencies {
     implementation ("net.zetetic:android-database-sqlcipher:4.5.3")
     //数据导出
     implementation("com.itextpdf:itextpdf:5.5.13.3")
+
+    implementation("com.google.guava:guava:32.1.2-jre")
+    implementation("com.google.guava:guava:31.0.1-android")
+    implementation("com.google.ai.client.generativeai:generativeai:0.1.1")
+    implementation("org.reactivestreams:reactive-streams:1.0.4")
 }

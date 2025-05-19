@@ -1,54 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="本年统计"
-        android:textColor="@color/text_primary"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp">
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/chart_tv_year_expense"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toStartOf="@id/chart_tv_year_income"
-            android:text="@string/payout"
-            android:textColor="@color/expense_color" />
+            android:padding="10dp"
+            android:text="本年统计"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/chart_tv_year_income"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="20dp"
-            android:text="@string/income"
-            android:textColor="@color/income_color" />
-    </RelativeLayout>
+            android:padding="10dp">
 
-    <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/chart_pie_year"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/chart_tv_year_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/chart_tv_year_income"
+                android:text="@string/payout"
+                android:textColor="@color/expense_color" />
 
-    <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/chart_pie_budget_null"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="10dp"
-        android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/chart_tv_year_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="20dp"
+                android:text="@string/income"
+                android:textColor="@color/income_color" />
+        </RelativeLayout>
 
-</LinearLayout>
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart_pie_year"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chart_pie_budget_null"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+
+        <!-- 添加AI分析报告卡片 -->
+        <include
+            android:id="@+id/card_ai_analysis"
+            layout="@layout/card_ai_analysis_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

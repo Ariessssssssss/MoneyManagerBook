@@ -6,11 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/grey_background"
-<<<<<<< HEAD
     tools:context=".view.activity.DetailsActivity">
-=======
-    tools:context=".DetailsActivity">
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
 
     <RelativeLayout
         android:layout_width="match_parent"

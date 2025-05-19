@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:padding="5dp"
     android:background="@color/white"
     tools:context=".view.activity.LoginActivity">
@@ -40,63 +39,22 @@
         android:layout_height="176dp"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="96dp"
-=======
-    android:background="@drawable/background"
-    tools:context=".LoginActivity">
-
-    <TextView
-        android:id="@+id/login_tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="20dp"
-        android:textColor="@color/blue_0077D1"
-        android:textSize="35sp"
-        android:text="@string/hello"/>
-
-    <TextView
-        android:id="@+id/login_tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/login_tv1"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:textColor="@color/blue_0077D1"
-        android:textSize="25sp"
-        android:text="@string/use"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:layout_alignParentEnd="true"
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
         android:src="@drawable/login"/>
 
     <LinearLayout
         android:id="@+id/login_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_centerInParent="true"
         android:layout_marginStart="80dp"
         android:background="@drawable/card_background"
         android:orientation="vertical"
         android:padding="15dp">
-=======
-        android:layout_marginStart="80dp"
-        android:layout_centerInParent="true"
-        android:padding="15dp"
-        android:orientation="vertical"
-        android:background="@drawable/radius_border">
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
 
         <EditText
             android:id="@+id/login_et_username"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-<<<<<<< HEAD
             android:background="@drawable/input_field_background"
             android:drawableStart="@drawable/user"
             android:drawablePadding="8dp"
@@ -110,31 +68,15 @@
             android:layout_marginTop="12dp"
             android:layout_marginBottom="12dp"
             android:background="@color/text_secondary" />
-=======
-            android:drawableStart="@drawable/user"
-            android:hint="@string/login_user_hint"
-            android:background="@color/white"/>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:background="@color/black"/>
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-=======
-            android:paddingTop="10dp"
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
             android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/login_et_password"
                 android:layout_width="0dp"
-<<<<<<< HEAD
                 android:layout_height="45dp"
                 android:layout_weight="1"
                 android:background="@drawable/input_field_background"
@@ -144,25 +86,13 @@
                 android:inputType="textPassword"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp" />
-=======
-                android:layout_weight="1"
-                android:layout_height="45dp"
-                android:hint="@string/login_pass_hint"
-                android:drawableStart="@drawable/password"
-                android:inputType="textPassword"
-                android:background="@color/white"/>
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
 
             <ImageView
                 android:id="@+id/login_iv_hide"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-<<<<<<< HEAD
                 android:src="@drawable/eye_close" />
-=======
-                android:src="@mipmap/eye_close"/>
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
 
         </LinearLayout>
 
@@ -173,17 +103,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/login_layout"
-<<<<<<< HEAD
         android:layout_alignEnd="@id/login_layout"
         android:text="记住密码"
         android:textColor="@color/text_primary"
         android:textSize="16sp"/>
-=======
-        android:layout_marginStart="265dp"
-        android:text="记住密码"
-        android:textColor="@color/black"
-        android:textSize="18sp"/>
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
 
     <android.widget.Button
         android:id="@+id/login_btn"
@@ -193,14 +116,9 @@
         android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"
         android:text="@string/login"
-<<<<<<< HEAD
         android:textColor="@color/white"
         android:textSize="18sp"
         android:background="@drawable/income_button_background"/>
-=======
-        android:textSize="20sp"
-        style="@style/Record_btn_Style"/>
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
 
     <TextView
         android:id="@+id/login_tv_register"
@@ -209,7 +127,6 @@
         android:layout_below="@id/login_btn"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-<<<<<<< HEAD
         android:textColor="@color/primary_green"
         android:textSize="17sp"
         android:text="@string/login_register"/>
@@ -227,10 +144,4 @@
         android:drawableLeft="@mipmap/wechat"/>
 
 
-=======
-        android:textColor="@color/blue_0077D1"
-        android:textSize="17sp"
-        android:text="@string/login_register"/>
-
->>>>>>> 24db75c1976b03d4663138db1c9bb28675434d07
 </RelativeLayout>
